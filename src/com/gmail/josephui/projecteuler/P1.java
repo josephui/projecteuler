@@ -33,8 +33,10 @@ public class P1 implements Solver{
     public String solve(){
         int total = 0;
         
-        for(int i = 0; i < 1000; i++){
-            
+        for(int i = 3; i < 1000; i++){
+            if((i % 3) == 0 || (i % 5) == 0){
+                total += i;
+            }
         }
         
         return "" + total;
